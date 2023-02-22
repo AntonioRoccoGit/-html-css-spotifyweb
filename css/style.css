@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -38,6 +42,11 @@ a {
 
 .circle {
     border-radius: 50%;
+}
+
+.hidden {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* ****************************************
@@ -111,7 +120,7 @@ a {
 
 /* nav menu */
 
-.nav-menu a > * {
+.nav-menu a img {
     display: inline-block;
     vertical-align: middle;
 }
@@ -151,7 +160,7 @@ a {
 
 .user-account {
     padding: 20px 0 10px;
-    width: 130%;
+    width: 240px;
     border-top: 1px solid var(--nav-bar-text);
 }
 
@@ -160,9 +169,7 @@ a {
 }
 
 .download-app img,
-.download-app h3,
-.user-account img,
-.user-account h2 {
+.user-account img {
     display: inline-block;
     vertical-align: middle;
 }
@@ -173,9 +180,33 @@ a {
 }
 
 .user-account img {
-    width: 30px;
-    height: 30px;
+    margin-right: 10px;
+    object-fit: cover;
+    width: 38px;
+    height: 38px;
     background-color: var(--nav-bar-text);
+}
+
+/* ****************************************
+*************** |FONT STYLING| ************
+**************************************** */
+/* nav bar */
+.playlist > h2 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.new-play-list h2 {
+    font-size: 1.2rem;
+}
+
+.playlist li {
+    font-weight: 700;
+}
+
+.user-account h2 {
+    color: white;
+    font-size: 1.2rem;
 }
 
 /* ****************************************

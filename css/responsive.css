@@ -3,7 +3,7 @@
 ************************************* */
 
 @media screen and (max-width: 600px) {
-    /* COMMON */
+    /* HIDDEN ITEMS */
     .hidden {
         display: none;
     }
@@ -25,6 +25,10 @@
     .small-logo {
         display: block;
         transform: scale(1.2);
+    }
+
+    .user-account {
+        border: none;
     }
 
     /* VARIABLES */
