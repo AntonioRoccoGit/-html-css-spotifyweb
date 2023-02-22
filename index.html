@@ -9,12 +9,84 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- LINK RESPONSIVE CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="mc-wrapper">
+    <div class="mc-wrapper flex">
         <!-- SIDE BAR -->
-        <div class="nav-side-bar">
-            
+        <div class="nav-side-bar ">
+            <div class="container">
+                <!-- logo -->
+                <section class="logo-section">
+                    <a href="https://open.spotify.com" class="logo">
+                        <img class="big-logo" src="img/logo.svg" alt="">
+                        <img class="small-logo" src="img/logo-small.svg" alt="">
+                    </a>
+                </section>
+                <!-- /logo -->
+
+                <!-- nav menu -->
+                <section class="nav-menu">
+                    <ul>
+                        <li  class="flex align-cntr">
+                            <a href="">
+                                <img src="img/home.svg" alt="">
+                                <h3>Home</h3>
+                            </a>
+                        </li>
+                        <li  class="flex align-cntr">
+                            <a href="">
+                                <img src="img/search.svg" alt="">
+                                <h3 class="hidden">Cerca</h3>
+                            </a>
+                        </li>
+                        <li  class="flex align-cntr">
+                            <a href="">
+                                <img src="img/libreria.svg" alt="">
+                                <h3>La tua libreria</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /nav menu -->
+
+                <!-- playlist -->
+                <section class="hidden playlist">
+                    <h2>PLAYLIST</h2>
+                    <a class=" flex align-cntr new-play-list" href="">
+                        <i class="fa-sharp fa-solid fa-square-plus"></i>
+                        <h2>Crea Playlist</h2>
+                    </a>
+
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+
+                </section>
+                <!-- /playlist -->
+
+                <!-- nav bar footer -->
+                <section class="navbar-footer">
+
+                    <div class="download-app">
+                        <img src="img/download.svg" alt="">
+                        <h3>Installa app</h3>
+                    </div>
+
+                    <div class="user-account">
+                        <img class="circle" src="img/profile.svg" alt="">
+                        <h2>John Dela Vega</h2>
+                    </div>
+                </section>
+                <!-- /nav bar footer -->
+            </div>
         </div>
         <!-- /SIDE BAR -->
 

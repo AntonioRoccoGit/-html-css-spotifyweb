@@ -3,10 +3,34 @@
 ************************************* */
 
 @media screen and (max-width: 600px) {
+    /* COMMON */
+    .hidden {
+        display: none;
+    }
+
+    /* NAV BAR */
+    .nav-side-bar {
+        padding: 0 1.5rem;
+
+    }
+    
+    .logo {
+        padding: .8rem 0;
+    }
+
+    .big-logo {
+        display: none;
+    }
+
+    .small-logo {
+        display: block;
+        transform: scale(1.2);
+    }
+
     /* VARIABLES */
 
     /* layout */
     :root {
-        --side-bar-w: 100px;
+        --side-bar-w: 80px;
     }
 }
