@@ -1,4 +1,6 @@
-/* RESET */
+/* ****************************************
+***************** |RESET| *****************
+**************************************** */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,9 @@ img {
     max-width: 100%;
 }
 
-/* LAYOUT */
+/* ****************************************
+***************** |LAYOUT| ****************
+**************************************** */
 .mc-wrapper {
     display: flex;
     flex-wrap: wrap; 
@@ -22,7 +26,7 @@ img {
     width: var(--side-bar-w);
     height: calc(100% - (var(--footer-h)));
     /* debug */
-    background-color: rgba(0, 0, 0, 0.863);
+    background-color: rgba(44, 78, 0, 0.863);
 }
 
 /* main content */
@@ -43,17 +47,22 @@ img {
 .body-content {
     width: 100%;
     height: calc(100% - (var(--content-header-h)));
+    /* debug */
     background-color: rgb(86, 133, 177);
 }
 
 .footer {
     width: 100%;
     height: var(--footer-h);
+    /* debug */
     background-color: lightpink;
 }
 
-/* VARIABLES */
+/* ****************************************
+***************** |VARIABLES| *************
+**************************************** */
 
+/* layout */
 :root {
     --side-bar-w: 280px;
     --footer-h: 160px;
