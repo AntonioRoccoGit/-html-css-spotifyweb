@@ -386,18 +386,19 @@ a.logo  {
 .body-content::-webkit-scrollbar-thumb {
     background-color: black;    /* color of the scroll thumb */
     border-radius: 20px;    
-     border: 10px solid var(--main-content-bgnd);  /*creates padding around scroll thumb  */
+    border: 10px solid var(--main-content-bgnd);  /*creates padding around scroll thumb  */
 }
 /* side nav bar scroll bar */
 
 .nav-side-bar .container::-webkit-scrollbar-thumb {
     background-color:var(--main-content-bgnd);    /* color of the scroll thumb */
-    border-radius: 20px;    
+    border-radius: 50px;   
+    border: 20px solid black; 
     /* border: 3px solid orange;  creates padding around scroll thumb */
 }
 
 .nav-side-bar .container::-webkit-scrollbar {
-    width: 6px;    
+    width: 50px;    
 }
 
 .nav-side-bar .container::-webkit-scrollbar-track {
