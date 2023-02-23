@@ -207,7 +207,7 @@ a.logo  {
 /* ****************************************
 ************* |MAIN CONTENT| **************
 **************************************** */
-/* header */
+/* HEADER */
 .header-content {
     justify-content: flex-end;
     align-items: center;
@@ -217,14 +217,16 @@ a.logo  {
 .header-content .btn {
     text-transform: uppercase;
     padding: 8px 16px;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 10px;
     border: 1px solid white;
     color: white;
 }
 
+/* BODY */
 /* body nav bar*/
 .body-nav-bar {
-    width: 400px;
+    width: 450px;
     font-size: 8px;
     margin: 0 auto;
 }
@@ -234,11 +236,15 @@ a.logo  {
     padding: 6px;
 }
 
+/* body content */
+.row a {
+    text-align: center;
+}
 
 /* ****************************************
 *************** |FONT STYLING| ************
 **************************************** */
-/* side nav bar */
+/* SIDE BAR */
 .playlist > h2 {
     color: white;
     font-size: 1.2rem;
@@ -257,6 +263,7 @@ a.logo  {
     font-size: 1.2rem;
 }
 
+/* BODY */
 /* body nav bar */
 .body-nav-bar ul{
     font-weight: 600;
@@ -265,6 +272,27 @@ a.logo  {
 
 }
 
+/* body content */
+.row > h2 {
+    padding: 30px 0 20px;
+    font-size: 30px;
+}
+
+.row > p {
+    padding-bottom: 30px;
+    color: var(--nav-bar-text);
+    font-weight: 500;
+}
+
+.row a h3 {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.row a h4 {
+    color: var(--nav-bar-text);
+}
 /* ****************************************
 ***************** |VARIABLES| *************
 **************************************** */
