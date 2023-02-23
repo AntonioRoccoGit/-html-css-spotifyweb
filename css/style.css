@@ -86,7 +86,6 @@ a {
 
 .body-content {
     overflow-y: auto;
-    overflow-x: hidden;
     padding: calc(14px + var(--content-header-h)) 14px 14px 14px;
     color: white;
     width: 100%;
@@ -94,6 +93,8 @@ a {
 }
 
 .footer {
+    overflow-y: auto;
+    flex-wrap: nowrap;
     width: 100%;
     height: var(--footer-h);
     background-color: var(--footer-bgnd);
@@ -249,6 +250,27 @@ a.logo  {
 }
 
 /* ****************************************
+**************** |FOOTER| *****************
+**************************************** */
+.now-song,
+.audio-video {
+    width: 400px;
+}
+
+.now-song,
+.song-label {
+    padding-left: 10px;
+}
+
+.call-to-action {
+    flex-grow: 1;
+}
+
+.song img {
+    width: 60px;
+}
+
+/* ****************************************
 *************** |FONT STYLING| ************
 **************************************** */
 /* SIDE BAR */
@@ -301,13 +323,24 @@ a.logo  {
     color: var(--nav-bar-text);
 }
 
+/* footer */
+.song-label h2 { 
+    color: white;
+    font-size: 16px;
+}
+
+.song-label h3 {
+    color: var(--nav-bar-text);
+    font-size: 12px;
+}
+
 /* ****************************************
 ***************** |VARIABLES| *************
 **************************************** */
 /* layout */
 :root {
-    --side-bar-w: 280px;
-    --footer-h: 90px;
+    --side-bar-w: 300px;
+    --footer-h: 100px;
     --content-header-h: 80px;
 }
 
