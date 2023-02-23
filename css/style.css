@@ -49,6 +49,10 @@ a {
     vertical-align: middle;
 }
 
+.btn {
+    border-radius: 20px;
+}
+
 /* ****************************************
 ************* |WEB APP LAYOUT| ************
 **************************************** */
@@ -61,38 +65,38 @@ a {
 /* side bar */
 .nav-side-bar {
     width: var(--side-bar-w);
-    height: calc(100% - (var(--footer-h)));
+    height: calc(100% - var(--footer-h));
     /* debug */
     background-color: black;
 }
 
 /* main content */
 .content {
-    height: calc(100% - (var(--footer-h)));
-    width: calc(100% - (var(--side-bar-w)));
-    /* debug */
-    background-color: lightcoral;
+    height: calc(100% - var(--footer-h));
+    width: calc(100% - var(--side-bar-w));
+    background-color: var(--main-content-bgnd);
 }
 
 .header-content {
-    width: 100%;
+    width: calc(100% - var(--side-bar-w));
     height: var(--content-header-h);
-    /* debug */
-    background-color: lightgreen;
+    position: fixed;
+    background-color: var(--main-header-bgnd);
 }
 
 .body-content {
+    overflow-y: auto;
+    padding: calc(14px + var(--content-header-h)) 14px 14px 14px;
+    color: white;
     width: 100%;
-    height: calc(100% - (var(--content-header-h)));
-    /* debug */
-    background-color: rgb(86, 133, 177);
+    height: calc(100% - var(--content-header-h));
 }
 
 .footer {
     width: 100%;
     height: var(--footer-h);
     /* debug */
-    background-color: lightpink;
+    background-color: rgb(32, 167, 66);
 }
 
 /* ****************************************
@@ -100,7 +104,12 @@ a {
 **************************************** */
 .nav-side-bar .container {
     width: 85%;
+    height: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
     margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .nav-side-bar {
@@ -109,8 +118,17 @@ a {
 }
 
 /* logo */
-.logo {
-    padding: 16px 96px 32px 0 ;
+a.logo  {
+    display: block;
+    width: 180px;
+    padding-bottom: 30px;
+}
+
+.logo-section {
+    padding-top: 20px;
+}
+
+.big-logo {
     display: block;
 }
 
@@ -136,6 +154,7 @@ a {
 /* play list */
 .playlist {
     padding-top: 30px;
+    flex-grow: 1;
 }
 
 .new-play-list {
@@ -153,9 +172,7 @@ a {
 
 /* footer */
 .navbar-footer {
-    display: block;
-    position: absolute;
-    bottom: 0;
+    align-self: flex-end;
 }
 
 .user-account {
@@ -188,9 +205,40 @@ a {
 }
 
 /* ****************************************
+************* |MAIN CONTENT| **************
+**************************************** */
+/* header */
+.header-content {
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.header-content .btn {
+    text-transform: uppercase;
+    padding: 8px 16px;
+    font-weight: 600;
+    border: 1px solid white;
+    color: white;
+}
+
+/* body nav bar*/
+.body-nav-bar {
+    width: 400px;
+    font-size: 8px;
+    margin: 0 auto;
+}
+
+.row .flex li {
+    width: calc(100% / 6);
+    padding: 6px;
+}
+
+
+/* ****************************************
 *************** |FONT STYLING| ************
 **************************************** */
-/* nav bar */
+/* side nav bar */
 .playlist > h2 {
     color: white;
     font-size: 1.2rem;
@@ -209,18 +257,30 @@ a {
     font-size: 1.2rem;
 }
 
+/* body nav bar */
+.body-nav-bar ul{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--nav-bar-text);
+
+}
+
 /* ****************************************
 ***************** |VARIABLES| *************
 **************************************** */
 
 /* layout */
 :root {
-    --side-bar-w: 300px;
-    --footer-h: 100px;
-    --content-header-h: 100px;
+    --side-bar-w: 280px;
+    --footer-h: 80px;
+    --content-header-h: 80px;
 }
 
 /* color */
 :root {
+    /* txt */
     --nav-bar-text: #A3A3A3;
+    /* bgnd */
+    --main-content-bgnd: #141922;
+    --main-header-bgnd: rgba(0, 0, 0, 0.8);
 }

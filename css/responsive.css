@@ -1,4 +1,27 @@
 /* *************************************
+***************** |MD| *****************
+************************************* */
+@media screen and (max-width: 1100px) {
+    .row .flex li {
+        width: calc(100% / 4);
+    }
+}
+
+/* *************************************
+***************** |S| ******************
+************************************* */
+@media screen and (max-width: 700px) {
+    .row .flex li {
+        width: calc(100% / 2);
+    }
+    /* body nav bar */
+    .body-nav-bar {
+        width: 85%;
+        font-size: 6px;
+    }
+}
+
+/* *************************************
 ***************** |XS| *****************
 ************************************* */
 
@@ -10,12 +33,12 @@
 
     /* NAV BAR */
     .nav-side-bar {
-        padding: 0 1.5rem;
+        padding: 0 24px
 
     }
     
-    .logo {
-        padding: .8rem 0;
+    a.logo { 
+        width: 34px;
     }
 
     .big-logo {
@@ -23,18 +46,27 @@
     }
 
     .small-logo {
-        display: block;
-        transform: scale(1.2);
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-grow: 1;
+    }
+
+    .download-app {
+        text-align: end;
     }
 
     .user-account {
         border: none;
+        width: 35px;
+        object-fit: cover;
     }
 
     /* VARIABLES */
 
     /* layout */
     :root {
-        --side-bar-w: 80px;
+        --side-bar-w: 90px;
     }
 }
