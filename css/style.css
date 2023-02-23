@@ -104,7 +104,6 @@ a {
 ************* |NAV SIDE BAR| **************
 **************************************** */
 .nav-side-bar .container {
-    width: 85%;
     height: 100%;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -127,6 +126,7 @@ a.logo  {
 
 .logo-section {
     padding-top: 20px;
+    padding-left: 20px;
 }
 
 .big-logo {
@@ -146,6 +146,7 @@ a.logo  {
 
 .nav-menu li {
     padding: 8px 0;
+    padding-left: 20px;
 }
 
 .nav-menu img {
@@ -155,6 +156,7 @@ a.logo  {
 /* play list */
 .playlist {
     padding-top: 30px;
+    padding-left: 20px;
     flex-grow: 1;
 }
 
@@ -173,7 +175,7 @@ a.logo  {
 
 /* footer */
 .navbar-footer {
-    align-self: flex-end;
+    padding-left: 20px;
 }
 
 .user-account {
@@ -364,6 +366,8 @@ a.logo  {
     --main-content-bgnd: #141922;
     --main-header-bgnd: rgba(0, 0, 0, 0.8);
     --footer-bgnd: #282828;
+    /* hover */
+    --active-side: #ADFF2F;
 }
 
 
@@ -403,4 +407,28 @@ a.logo  {
 
 .nav-side-bar .container::-webkit-scrollbar-button {
     height: 100px; /* vertical scrollbar height */
+}
+
+/* ****************************************
+**************** |TEST HOVER| *************
+**************************************** */
+
+/* .hov1 {
+    border-left: 2px solid var(--active-side);
+}
+.hov2 {
+    border-left: 2px solid var(--active-side);
+}
+.hov3 {
+    border-left: 2px solid var(--active-side);
+}
+
+
+.hov1:active .hov2 {
+    border-left: none;
+
+} */
+
+.hov1:active {
+    border-left: 3px solid var(--active-side);
 }
