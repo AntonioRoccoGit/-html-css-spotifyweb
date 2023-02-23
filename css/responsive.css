@@ -14,11 +14,7 @@
     .row .flex li {
         width: calc(100% / 2);
     }
-    /* body nav bar */
-    .body-nav-bar {
-        width: 85%;
-        font-size: 8px;
-    }
+    
 }
 
 /* *************************************

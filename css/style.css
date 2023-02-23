@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--footer-bgnd)
 }
 
 img {
@@ -66,7 +67,6 @@ a {
 .nav-side-bar {
     width: var(--side-bar-w);
     height: calc(100% - var(--footer-h));
-    /* debug */
     background-color: black;
 }
 
@@ -86,6 +86,7 @@ a {
 
 .body-content {
     overflow-y: auto;
+    overflow-x: hidden;
     padding: calc(14px + var(--content-header-h)) 14px 14px 14px;
     color: white;
     width: 100%;
@@ -95,8 +96,7 @@ a {
 .footer {
     width: 100%;
     height: var(--footer-h);
-    /* debug */
-    background-color: rgb(32, 167, 66);
+    background-color: var(--footer-bgnd);
 }
 
 /* ****************************************
@@ -226,19 +226,26 @@ a.logo  {
 /* BODY */
 /* body nav bar*/
 .body-nav-bar {
-    width: 450px;
-    font-size: 8px;
+    line-height: 20px;
+    text-align: center;
+    width: 80%;
+    font-size: 12px;
     margin: 0 auto;
 }
 
-.row .flex li {
-    width: calc(100% / 6);
-    padding: 6px;
+.body-nav-bar li {
+    display: inline-block;
+    padding: 12px;
 }
 
 /* body content */
 .row a {
     text-align: center;
+}
+
+.row .flex li {
+    width: calc(100% / 6);
+    padding: 6px;
 }
 
 /* ****************************************
@@ -247,11 +254,11 @@ a.logo  {
 /* SIDE BAR */
 .playlist > h2 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 18px;
 }
 
 .new-play-list h2 {
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 
 .playlist li {
@@ -293,14 +300,14 @@ a.logo  {
 .row a h4 {
     color: var(--nav-bar-text);
 }
+
 /* ****************************************
 ***************** |VARIABLES| *************
 **************************************** */
-
 /* layout */
 :root {
     --side-bar-w: 280px;
-    --footer-h: 80px;
+    --footer-h: 90px;
     --content-header-h: 80px;
 }
 
@@ -311,4 +318,5 @@ a.logo  {
     /* bgnd */
     --main-content-bgnd: #141922;
     --main-header-bgnd: rgba(0, 0, 0, 0.8);
+    --footer-bgnd: #282828;
 }
