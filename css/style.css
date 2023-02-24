@@ -255,9 +255,17 @@ a.logo  {
 **************** |FOOTER| *****************
 **************************************** */
 /* left side */
+.footer {
+    flex-wrap: nowrap;
+}
+ 
+.song.flex {
+    flex-wrap: nowrap;
+}
+
 .now-song,
 .audio-video {
-    width: 250px;
+    width: 200px;
 }
 
 .now-song,
@@ -270,12 +278,17 @@ a.logo  {
 }
 
 .song img {
-    width: 70px;
+    width: 30%;
+}
+
+.song-label {
+    min-width: 110px;
 }
 
 /* call to action */
 .call-to-action ul {
-    width: 150px;
+    width: 50%;
+    max-width: 200px;
     margin: 0 auto;
     color: white;
 }

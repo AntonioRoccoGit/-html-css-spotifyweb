@@ -50,10 +50,17 @@
     }
 
     .download-app {
-        text-align: end;
+        text-align: center;
+    }
+    
+    .nav-menu li,
+    .logo-section,
+    .navbar-footer {
+        padding-left: 0;
     }
 
     .user-account {
+        padding-left: 0;
         border: none;
         width: 35px;
         object-fit: cover;
@@ -63,6 +70,6 @@
 
     /* layout */
     :root {
-        --side-bar-w: 90px;
+        --side-bar-w: 100px;
     }
 }
