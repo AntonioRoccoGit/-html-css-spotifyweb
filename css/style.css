@@ -30,11 +30,14 @@ a {
 **************************************** */
 .flex {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .space-btwn {
     justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .align-cntr {
@@ -58,7 +61,6 @@ a {
 ************* |WEB APP LAYOUT| ************
 **************************************** */
 .mc-wrapper {
-    flex-wrap: wrap; 
     width: 100%;
     height: 100vh;
 }
@@ -89,12 +91,11 @@ a {
     padding: calc(14px + var(--content-header-h)) 14px 14px 14px;
     color: white;
     width: 100%;
-    height: calc(100% - var(--content-header-h));
+    height: 100%;
 }
 
 .footer {
-    overflow-y: auto;
-    flex-wrap: nowrap;
+    z-index: 999;
     width: 100%;
     height: var(--footer-h);
     background-color: var(--footer-bgnd);
@@ -105,16 +106,12 @@ a {
 **************************************** */
 .nav-side-bar .container {
     height: 100%;
-    flex-wrap: nowrap;
     flex-direction: column;
     margin: 0 auto;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .nav-side-bar {
     color: var(--nav-bar-text);
-    position: relative;
 }
 
 /* logo */
@@ -158,6 +155,7 @@ a.logo  {
     padding-top: 30px;
     padding-left: 20px;
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .new-play-list {
@@ -255,14 +253,6 @@ a.logo  {
 **************** |FOOTER| *****************
 **************************************** */
 /* left side */
-.footer {
-    flex-wrap: nowrap;
-}
- 
-.song.flex {
-    flex-wrap: nowrap;
-}
-
 .now-song,
 .audio-video {
     width: 200px;
@@ -389,38 +379,39 @@ a.logo  {
 **************************************** */
 /* main content scroll bar */
 .body-content::-webkit-scrollbar {
-    width: 30px;               /* width of the entire scrollbar */
+    width: 20px;   
+    height: 50%;            /* width of the entire scrollbar */
 }
-  
+
 .body-content::-webkit-scrollbar-track {
-    background: var(--main-content-bgnd);        /* color of the tracking area */
+    background: black;        /* color of the tracking area */
 }
   
 .body-content::-webkit-scrollbar-thumb {
-    background-color: black;    /* color of the scroll thumb */
+    background-color: var(--main-content-bgnd);    /* color of the scroll thumb */
     border-radius: 20px;    
-    border: 10px solid var(--main-content-bgnd);  /*creates padding around scroll thumb  */
+    border: 6px solid black;  /*creates padding around scroll thumb  */
 }
 /* side nav bar scroll bar */
 
-.nav-side-bar .container::-webkit-scrollbar-thumb {
+.nav-side-bar .playlist::-webkit-scrollbar-thumb {
     background-color:var(--main-content-bgnd);    /* color of the scroll thumb */
     border-radius: 50px;   
     border: 20px solid black; 
     /* border: 3px solid orange;  creates padding around scroll thumb */
 }
 
-.nav-side-bar .container::-webkit-scrollbar {
+.nav-side-bar .playlist::-webkit-scrollbar {
     width: 50px;    
 }
 
-.nav-side-bar .container::-webkit-scrollbar-track {
+.nav-side-bar .playlist::-webkit-scrollbar-track {
     background: black;           /* width of the entire scrollbar */
 
 }
 
-.nav-side-bar .container::-webkit-scrollbar-button {
-    height: 100px; /* vertical scrollbar height */
+.nav-side-bar .playlist::-webkit-scrollbar-button {
+    height: 200px; /* vertical scrollbar height */
 }
 
 /* ****************************************
