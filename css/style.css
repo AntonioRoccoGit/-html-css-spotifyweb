@@ -513,8 +513,3 @@ a.logo  {
 .hov1:active {
     border-left: 3px solid var(--active-side);
 }
-
-
- li:hover li {
-    color: white;
-}
