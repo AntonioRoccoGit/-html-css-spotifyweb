@@ -68,7 +68,7 @@ a {
 /* side bar */
 .nav-side-bar {
     width: var(--side-bar-w);
-    height: calc(100% - var(--footer-h));
+    height: calc(100vh - var(--footer-h));
     background-color: black;
 }
 
@@ -108,6 +108,7 @@ a {
     height: 100%;
     flex-direction: column;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .nav-side-bar {
@@ -287,6 +288,74 @@ a.logo  {
     font-size: 30px;
 }
 
+.player {
+    padding: 15px 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.player-bar {
+    height: 6px;
+    border-radius: 20px;
+    width: 80%;
+    min-width: 40px;
+    margin: 0 auto;
+    background-color: #5A5A5A;
+    cursor: pointer;
+}
+
+.player-duration {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #C1C1C1;
+}
+
+.player .player-duration::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: none;
+}
+
+.player .player-bar:hover .player-duration::after {
+    display: block;
+} 
+
+.player .player-bar:hover .player-duration {
+    background-color: #e220d8;
+}
+
+/* audio video */
+.audio-video ul {
+    column-gap: 14px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.audio-bar {
+    margin-left: 14px;
+    height: 4px;
+    border-radius: 20px;
+    width: 55%;
+    background-color: #5A5A5A;
+    cursor: pointer;
+}
+
+.audio-selector {
+    width: 25%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #C1C1C1;
+}
+
 /* ****************************************
 *************** |FONT STYLING| ************
 **************************************** */
@@ -315,7 +384,7 @@ a.logo  {
     font-weight: 600;
     text-transform: uppercase;
     color: var(--nav-bar-text);
-
+    
 }
 
 /* body content */
@@ -349,6 +418,13 @@ a.logo  {
 .song-label h3 {
     color: var(--nav-bar-text);
     font-size: 12px;
+}
+
+/* player bar */
+.player span {
+    font-weight: 600;
+    font-size: 10px;
+    color: white;
 }
 
 /* ****************************************
@@ -386,7 +462,7 @@ a.logo  {
 .body-content::-webkit-scrollbar-track {
     background: black;        /* color of the tracking area */
 }
-  
+
 .body-content::-webkit-scrollbar-thumb {
     background-color: var(--main-content-bgnd);    /* color of the scroll thumb */
     border-radius: 20px;    
@@ -407,7 +483,7 @@ a.logo  {
 
 .nav-side-bar .playlist::-webkit-scrollbar-track {
     background: black;           /* width of the entire scrollbar */
-
+    
 }
 
 .nav-side-bar .playlist::-webkit-scrollbar-button {
@@ -436,4 +512,9 @@ a.logo  {
 
 .hov1:active {
     border-left: 3px solid var(--active-side);
+}
+
+
+ li:hover li {
+    color: white;
 }
