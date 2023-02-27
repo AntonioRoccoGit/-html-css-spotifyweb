@@ -111,8 +111,12 @@ a {
     overflow: hidden;
 }
 
-.nav-side-bar {
+.nav-side-bar li{
     color: var(--nav-bar-text);
+}
+
+.nav-side-bar li:hover {
+    color: white;
 }
 
 /* logo */
@@ -152,6 +156,15 @@ a.logo  {
 }
 
 /* play list */
+.new-play-list {
+    color: var(--nav-bar-text);
+    overflow: hidden;
+}
+
+.new-play-list:hover {
+    color: white;
+}
+
 .playlist {
     padding-top: 30px;
     padding-left: 20px;
@@ -185,6 +198,11 @@ a.logo  {
 
 .download-app {
     padding-bottom: 10px;
+    color: var(--nav-bar-text);
+}
+
+.download-app:hover {
+    color: white;
 }
 
 .download-app img,
@@ -223,6 +241,10 @@ a.logo  {
     font-size: 10px;
     border: 1px solid white;
     color: white;
+}
+
+.header-content .btn:hover {
+    filter: opacity(0.6);
 }
 
 /* BODY */
